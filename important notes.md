@@ -1,38 +1,56 @@
-Nash Equilibrium:
-This concept explains a situation where every player chooses the best strategy available to them, considering the decisions of other players. Once this point is reached, no player can improve their result by changing their strategy alone.
+1.Nash Equilibrium:
+
+Nash Equilibrium is a concept in Game Theory that describes a situation where each participant selects the best possible strategy while considering the choices of others. At this stage, no individual can improve their outcome by changing their decision alone.
 
 Example:
-* Attacker: Attack or Not Attack
-* Defender: Defend or Not Defend
 
-The best stable combination of choices is called the Nash Equilibrium.
+Attacker
+* Attack
+* Not Attack
 
-Why it matters:
-This concept can help in designing secure networks where attackers and defenders continuously react to each other’s actions.
+Defender
+* Defend
+* Not Defend
 
-⸻
+The most stable combination of decisions is known as the Nash Equilibrium.
 
-Stackelberg Game
+Why It Matters:
 
-The Stackelberg Game follows a leader-follower approach.
+This concept helps in understanding how attackers and defenders behave in a network environment where both sides continuously adapt their strategies.
 
-* Leader: Defender
-* Follower: Attacker
 
-The defender makes a decision first. After observing that decision, the attacker responds with their own strategy.
+2.Stackelberg Game:
 
-Why it matters:
-This model is useful for cybersecurity and network resource management because security systems usually act before attackers respond.
+The Stackelberg Game follows a leader-follower model in which one participant acts first and the other responds accordingly.
 
-⸻
+Participants
 
-Modbus Dataset Study
-Dataset Name:
+Leader: Defender
+
+Follower: Attacker
+
+Process
+
+1. The defender selects a strategy.
+2. The attacker observes the decision.
+3. The attacker responds with an appropriate action.
+
+Why It Matters:
+
+This model is commonly used in cybersecurity and resource allocation because defense mechanisms are often deployed before attackers take action.
+
+
+3.Modbus Dataset Study:
+
+Dataset Name
+
 Modbus Traffic Dataset
-Purpose:
-Used to study industrial network traffic and identify malicious activities.
 
-Important Features:
+Purpose
+
+The dataset is used to analyze industrial network traffic and detect potentially malicious activities.
+
+Important Features
 
 * Source IP Address
 * Destination IP Address
@@ -40,11 +58,12 @@ Important Features:
 * Packet Length
 * Timestamp
 
-Attack Types Observed:
+Attack Types Observed
 
 * Denial of Service (DoS)
 * Scanning Attacks
 * Injection Attacks
 
 Learning Outcome:
-The dataset can be used to train machine learning models for intrusion detection and network monitoring.
+
+The Modbus dataset provides valuable information that can be used to develop machine learning models for intrusion detection, attack analysis, and network monitoring.
