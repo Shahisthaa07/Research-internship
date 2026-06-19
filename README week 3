@@ -1,0 +1,23 @@
+# Week 3 - Game-Theoretic Cybersecurity Defense
+
+This week's work focused on understanding Game Theory concepts and applying them to cybersecurity decision-making. Initial implementations of Nash Defender and Stackelberg Defender strategies were developed along with a simple payoff calculation engine.
+
+## Files
+
+* `nash_defender.py` : Basic Nash Equilibrium-based defense strategy.
+* `stackelberg_defender.py` : Leader-Follower based defense model.
+* `payoff_engine.py` : Calculates attack and defense payoffs.
+* `game_simulation.py` : Runs a small simulation and compares results.
+* `simulation_results.csv` : Stores simulation output.
+
+## Topics Covered
+
+* Nash Equilibrium
+* Stackelberg Game
+* Utility Functions
+* Payoff Functions
+* Attack Prediction
+* Detection Rate Analysis
+* Compromised Ratio Analysis
+
+Large-scale experiments and advanced optimization are planned for future weeks.
