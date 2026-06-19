@@ -4,7 +4,7 @@ Week 3 Notes: Game-Theoretic Approaches for Cybersecurity
 
 Nash Equilibrium is a concept in Game Theory where each player chooses the best strategy based on the actions of other players. Once equilibrium is reached, no player can improve their outcome by changing their strategy alone.
 
-Example 
+Example  
 
 * Attacker: Attack / No Attack
 * Defender: Defend / No Defend
