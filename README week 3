@@ -2,7 +2,7 @@
 
 This week's work focused on understanding Game Theory concepts and applying them to cybersecurity decision-making. Initial implementations of Nash Defender and Stackelberg Defender strategies were developed along with a simple payoff calculation engine.
 
-## Files
+## Files 
 
 * `nash_defender.py` : Basic Nash Equilibrium-based defense strategy.
 * `stackelberg_defender.py` : Leader-Follower based defense model.
