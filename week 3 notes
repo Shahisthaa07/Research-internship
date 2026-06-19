@@ -1,0 +1,187 @@
+Week 3 Notes: Game-Theoretic Approaches for Cybersecurity
+
+* 1. Nash Equilibrium
+
+Nash Equilibrium is a concept in Game Theory where each player chooses the best strategy based on the actions of other players. Once equilibrium is reached, no player can improve their outcome by changing their strategy alone.
+
+Example
+
+* Attacker: Attack / No Attack
+* Defender: Defend / No Defend
+
+Both players select strategies that maximize their own benefit.
+
+
+* 2. Stackelberg Game
+
+The Stackelberg Game follows a leader-follower model. The leader makes the first decision, and the follower reacts accordingly.
+
+=> In Cybersecurity
+
+* Defender acts as the leader.
+* Attacker acts as the follower.
+
+This helps the defender allocate resources while anticipating attacker behavior.
+
+
+* 3. Leader-Follower Model
+
+The leader takes action first and influences the decisions of the follower.
+
+=> Advantages
+
+* Better planning
+* Efficient resource allocation
+* Improved attack prediction
+
+
+* 4. Utility Functions
+
+Utility functions represent the benefit or satisfaction obtained by a player after selecting a strategy.
+
+=> Defender Utility
+
+Higher security and lower damage increase utility.
+
+=> Attacker Utility
+
+Successful attacks increase utility.
+
+
+* 5. Payoff Functions
+
+Payoff functions determine rewards or losses associated with each strategy.
+
+Example:
+
+Defender Payoff = Defense Strength − Attack Strength
+
+Attacker Payoff = Attack Strength − Defense Strength
+
+Payoffs are used to compare strategies and select the best action.
+
+
+* 6. Strategy Optimization
+
+Strategy optimization helps select the most effective action to maximize benefits and minimize losses.
+
+Objectives:
+
+* Increase detection rate.
+* Reduce compromised nodes.
+* Minimize network risk.
+
+
+* 7. Cybersecurity Decision Making
+
+Cybersecurity decisions involve choosing appropriate defense mechanisms to protect the network from attacks.
+
+Examples:
+
+* Firewalls
+* Intrusion Detection Systems
+* Resource Allocation Strategies
+
+
+* 8. Defender Resource Allocation
+
+Resources such as bandwidth, memory, and security mechanisms must be allocated efficiently to protect critical nodes.
+
+Goals:
+
+* Improve security.
+* Reduce attack impact.
+* Maximize network survival.
+
+
+* 9. Attack Prediction
+
+Attack prediction involves estimating possible threats before they occur.
+
+Common techniques:
+
+* Historical data analysis
+* Machine learning methods
+* Game-theoretic models
+
+
+* 10. Dynamic Defense Strategy
+
+Dynamic defense strategies adapt according to changing attack patterns.
+
+Benefits:
+
+* Faster response
+* Reduced vulnerability
+* Better protection
+
+
+* 11. Risk-Based Monitoring
+
+Risk-based monitoring focuses on high-risk areas instead of monitoring all components equally.
+
+Advantages:
+
+* Efficient resource usage
+* Early attack detection
+* Reduced network damage
+
+
+* 12. Network Security Metrics
+
+=> Detection Rate
+
+Percentage of attacks successfully detected.
+
+Detection Rate = (Detected Attacks / Total Attacks) × 100
+
+
+=> Compromised Ratio
+
+Percentage of nodes affected by attacks.
+
+Compromised Ratio = (Compromised Nodes / Total Nodes)
+
+
+=> Average Risk Score
+
+Represents the average level of risk in the network.
+
+Lower risk score indicates better security.
+
+
+=> Network Survival Rate
+
+Percentage of nodes that remain operational after attacks.
+
+Network Survival Rate = (Active Nodes / Total Nodes) × 100
+
+
+* 13. Performance Evaluation
+
+Performance evaluation compares different defense strategies based on:
+
+* Detection Rate
+* Compromised Ratio
+* Risk Score
+* Network Survival Rate
+
+
+* 14. Stackelberg vs Nash Analysis
+
+=> Nash Defender
+
+* Both players act simultaneously.
+* Simpler decision-making.
+* Moderate detection capability.
+
+=> Stackelberg Defender
+
+* Leader-follower approach.
+* Better attack anticipation.
+* Higher detection rate.
+* Lower risk score.
+
+=> Conclusion
+
+Game Theory provides mathematical tools to model attacker-defender interactions. Nash Equilibrium and Stackelberg Games help in designing effective defense strategies and improving cybersecurity performance.
