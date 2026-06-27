@@ -1,0 +1,89 @@
+import matplotlib.pyplot as plt
+
+
+def detection_percentage(detected_attacks, total_attacks):
+    return round((detected_attacks / total_attacks) * 100, 2)
+
+def compromise_percentage(compromised_nodes, total_nodes):
+    return round((compromised_nodes / total_nodes) * 100, 2)
+
+
+total_attacks = 25
+detected_attacks = 22
+
+total_nodes = 30
+compromised_nodes = 5
+
+# Calculate Metrics
+detection_rate = detection_percentage(detected_attacks, total_attacks)
+compromise_rate = compromise_percentage(compromised_nodes, total_nodes)
+
+print("========== Performance Metrics ==========")
+print(f"Detection Rate      : {detection_rate}%")
+print(f"Compromise Rate     : {compromise_rate}%")
+
+strategies = {
+    "Stackelberg": {
+        "Detection Rate": 88,
+        "Compromise Rate": 15
+    },
+    "Nash": {
+        "Detection Rate": 81,
+        "Compromise Rate": 21
+    }
+}
+
+print("\n========== Strategy Comparison ==========")
+
+for strategy, metrics in strategies.items():
+    print(f"\n{strategy} Strategy")
+    for metric, value in metrics.items():
+        if "Detection" in metric:
+            print(f"{metric}: {value}%")
+        else:
+            print(f"{metric}: {value}%")
+
+if strategies["Stackelberg"]["Detection Rate"] > strategies["Nash"]["Detection Rate"]:
+    print("\nBest Detection Strategy : Stackelberg")
+else:
+    print("\nBest Detection Strategy : Nash")
+
+
+models = list(strategies.keys())
+detection_scores = [
+    strategies["Stackelberg"]["Detection Rate"],
+    strategies["Nash"]["Detection Rate"]
+]
+
+compromise_scores = [
+    strategies["Stackelberg"]["Compromise Rate"],
+    strategies["Nash"]["Compromise Rate"]
+]
+
+plt.figure(figsize=(10, 4))
+
+# Detection Rate Chart
+plt.subplot(1, 2, 1)
+plt.bar(models, detection_scores, color=["royalblue", "orange"])
+plt.title("Detection Rate Comparison")
+plt.ylabel("Detection Rate (%)")
+plt.ylim(0, 100)
+
+for i, value in enumerate(detection_scores):
+    plt.text(i, value + 1, str(value), ha="center")
+
+# Compromise Rate Chart
+plt.subplot(1, 2, 2)
+plt.bar(models, compromise_scores, color=["green", "red"])
+plt.title("Compromise Rate Comparison")
+plt.ylabel("Compromise Rate (%)")
+plt.ylim(0, 30)
+
+for i, value in enumerate(compromise_scores):
+    plt.text(i, value + 0.5, str(value), ha="center")
+
+plt.tight_layout()
+
+plt.savefig("performance_analysis.png", dpi=300)
+
+plt.show()
